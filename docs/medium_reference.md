@@ -7,7 +7,7 @@
 **Published:** 3 Oct 2023 on Medium  
 **URL:** <https://medium.com/@odil.tokhirov/how-i-built-a-hand-gesture-recognition-model-in-python-part-2-5d8987bb0756>
 
-## What We Re-used
+## What I Re-used
 
 | Section in Article | How it is used here |
 |--------------------|---------------------|
