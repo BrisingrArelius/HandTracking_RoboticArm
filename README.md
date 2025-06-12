@@ -15,7 +15,8 @@ The pipeline uses **MediaPipe Hands** to extract 21 hand landmarks, then classif
 | `src/model/` | Ready-to-use weights:<br>  `model_nn_14classes.h5`, `model_rf_14classes.pkl`. |
 | `src/inference/` | • `print_gesture_nn.py` – live demo (neural-net)<br>• `print_gesture_rf.py` – live demo (random-forest)<br>• `hand_gesture_reader.py` – maps gestures to keyboard / ROS commands. |
 | `docs/` | Screenshots, diagrams, attribution notes. |
-| `ignore/` | Bulky artefacts kept out of Git: raw `dataset/`, `gesture_npz.zip`, etc. |
+
+Datasets to generate the npz files are not included in the repository due to size constraints.
 
 ---
 
