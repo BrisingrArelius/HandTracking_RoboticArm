@@ -1,6 +1,6 @@
 import cv2, numpy as np, mediapipe as mp, joblib, time
 
-MODEL_PATH = "model_rf_14classes.pkl"  # adjust
+MODEL_PATH = "model/model_rf_14classes.pkl"  # adjust
 
 class_names = [
     'up_fine','up_fast','down_fine','down_fast',
