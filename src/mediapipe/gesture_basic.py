@@ -27,7 +27,7 @@ from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
 # ───────────────────────── Model & recognizer setup ────────────────────────
-model_path = 'gesture_recognizer_new.task'        # Pre-trained .task model
+model_path = 'gesture_recognizer.task'        # Pre-trained .task model
 
 base_options = python.BaseOptions(model_asset_path=model_path)
 options = vision.GestureRecognizerOptions(

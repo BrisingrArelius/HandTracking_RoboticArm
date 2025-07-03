@@ -27,7 +27,7 @@ Dependencies
 import cv2, numpy as np, mediapipe as mp, joblib, time
 
 # ───────────────────────── Configuration ─────────────────────────
-MODEL_PATH = "model/model_rf_14classes.pkl"    # ← Adjust if your model lives elsewhere.
+MODEL_PATH = "model/model_rf.pkl"    # ← Adjust if your model lives elsewhere.
 
 class_names = [
     'up_fine','up_fast','down_fine','down_fast',

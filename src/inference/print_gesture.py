@@ -26,7 +26,7 @@ import tensorflow as tf
 import time
 
 # ───────────────────────── Configuration ──────────────────────
-MODEL_PATH = "model/model_nn_14classes.h5"   # ← update if you relocate the model
+MODEL_PATH = "model/model_nn.h5"   # ← update if you relocate the model
 
 class_names = [
     'move_up_fine', 'move_up_fast',

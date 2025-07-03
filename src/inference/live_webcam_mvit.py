@@ -50,7 +50,7 @@ parser = argparse.ArgumentParser(
     description="Real-time MobileViTv2 gesture recogniser from webcam feed")
 parser.add_argument(
     "--weights",
-    default="10_epoch_mobilevitv2_050_gestures.pth",
+    default="best_model.pth",
     help="File name inside HANDTRACKING_ROBOTICARM/src/model/ containing the "
          "trained weights."
 )
@@ -84,16 +84,13 @@ model.eval().to(device)                                 # Switch to inference mo
 idx2class = {v: k for k, v in json.load(open(LABELS)).items()}
 
 # ───────────────────────── Input preprocessing ─────────────────────────────
-# The model was trained on 224 × 224, 3-channel, mean-0.5 / std-0.5 data.
 tf = transforms.Compose([
     transforms.Resize((args.imgsize, args.imgsize)),
-    transforms.Grayscale(num_output_channels=3),        # Ensure 3 channels.
-    transforms.ToTensor(),
-    transforms.Normalize([0.5] * 3, [0.5] * 3),
+    transforms.ToTensor(),          # 0-1, 3-channel RGB
 ])
 
 # ───────────────────────── Webcam loop parameters ──────────────────────────
-fps_target      = 5.0                                   # Desired *processed* FPS.
+fps_target      = 30.0                                   # Desired *processed* FPS.
 frame_interval  = 1.0 / fps_target                      # Seconds to wait per frame.
 last_frame_t    = 0.0                                   # Time when last frame was processed.
 
