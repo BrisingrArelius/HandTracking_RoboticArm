@@ -1,3 +1,7 @@
 ignore/
 data_collection/dataset
 data_collection/data
+src/model_old
+src/model_new
+src/model/data
+src/model/data_small
