@@ -5,3 +5,4 @@ src/model_old
 src/model_new
 src/model/data
 src/model/data_small
+src/test.py
