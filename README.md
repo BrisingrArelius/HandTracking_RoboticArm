@@ -159,4 +159,3 @@ MIT License – see `LICENSE` for details.
 
 ---
 
-*(Placeholders: **`docs/media/gestures_grid.png`**, **`docs/media/demo.gif`** – drop files and update image links above.)*
